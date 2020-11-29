@@ -8,7 +8,7 @@ export const MainScreen = ({ addTodo, todos, removeTodo, openTodo }) => {
     <View>
       <AddTodo onSubmit={addTodo} />
 
-      {todos.lenght ? (
+      {todos.length ? (
         <FlatList
           keyExtractor={(item) => item.id.toString()}
           data={todos}
